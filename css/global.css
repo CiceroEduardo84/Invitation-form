@@ -7,7 +7,7 @@
 * {
   margin: 0;
   padding: 0;
-  /* font: inherit; */
+  font: inherit;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -38,7 +38,7 @@
   --shape-body: #212427;
   --shape-button: #2d3136;
   --shape-hover: #383d42;
-  
+
   --text-body: #c8cdd0;
   --text-heading: #f9f9f9;
 
@@ -56,3 +56,8 @@
   --text-xs: 500 0.75rem/1.5 var(--ff-open-sans);
 }
 
+body {
+  overflow: hidden;
+  font: var(--text-2sm);
+  color: var(--text-body);
+}
