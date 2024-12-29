@@ -26,16 +26,8 @@
     padding-block: 5rem;
 
     & .main-container {
-      flex-direction: column;
-      gap: 3rem;
-
-      max-width: 35rem;
+      max-width: 45rem;
       margin: auto;
-
-      & h2 {
-        font: var(--text-md);
-        color: var(--text-heading);
-      }
     }
   }
 }

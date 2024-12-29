@@ -13,6 +13,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+*::-webkit-scrollbar {
+  display: none;
+}
+
 :root {
   --brand-light: #59b2ff;
   --brand-mid: #3487cf;
@@ -72,4 +76,22 @@ aside {
 h1 {
   font: var(--text-logo);
   color: var(--accent-pink);
+}
+
+h2 {
+  font: var(--text-md);
+  color: var(--text-heading);
+}
+
+h3 {
+  font: var(--text-sm);
+  color: var(--text-heading);
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset + fieldset {
+  margin-top: 3rem;
 }
