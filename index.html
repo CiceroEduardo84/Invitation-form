@@ -29,7 +29,7 @@
           <h2>Crie seu convite</h2>
 
           <form method="post" enctype="multipart/form-data">
-            <fieldset class="event-info">
+            <fieldset class="event-info flex">
               <legend>
                 <img src="assets/icons/calendar.svg" alt="" />
                 <h3>Sobre o evento</h3>
@@ -68,7 +68,7 @@
               </div>
 
               <div class="flex gap1">
-                <div class="radio-wrapper flex1">
+                <div class="toggleType-wrapper flex1">
                   <label>Tipo</label>
 
                   <div class="box-radio flex gap0.25">
@@ -81,7 +81,7 @@
                         checked
                       />
 
-                      <div class="flex gap0.5">
+                      <label for="inPerson" class="flex gap0.5">
                         <svg
                           width="32"
                           height="32"
@@ -97,8 +97,8 @@
                           />
                         </svg>
 
-                        <label for="inPerson">Presencial</label>
-                      </div>
+                        Presencial</label
+                      >
                     </div>
 
                     <div class="radio-inner flex1">
@@ -109,7 +109,7 @@
                         value="online"
                       />
 
-                      <div class="flex gap0.5">
+                      <label for="online" class="flex gap0.5">
                         <svg
                           width="32"
                           height="32"
@@ -125,8 +125,8 @@
                           />
                         </svg>
 
-                        <label for="online">Online</label>
-                      </div>
+                        Online</label
+                      >
                     </div>
                   </div>
                 </div>
@@ -153,14 +153,165 @@
               </div>
             </fieldset>
 
-            <fieldset class="personalization-info">
+            <fieldset class="personalization-info flex">
               <legend>
                 <img src="assets/icons/paintbrush.svg" alt="" />
                 <h3>Personalização</h3>
               </legend>
+
+              <div class="radioColor-wrapper">
+                <label for="color">Cor principal</label>
+
+                <div class="radio-inner flex">
+                  <input
+                    type="radio"
+                    name="color"
+                    id="color"
+                    value="brand-light"
+                    checked
+                  />
+
+                  <input type="radio" name="color" id="color" value="navy" />
+
+                  <input type="radio" name="color" id="color" value="purple" />
+
+                  <input type="radio" name="color" id="color" value="fuschia" />
+
+                  <input type="radio" name="color" id="color" value="pink" />
+
+                  <input type="radio" name="color" id="color" value="danger" />
+
+                  <input type="radio" name="color" id="color" value="orange" />
+
+                  <input type="radio" name="color" id="color" value="yellow" />
+
+                  <input type="radio" name="color" id="color" value="lime" />
+
+                  <input type="radio" name="color" id="color" value="green" />
+
+                  <input type="radio" name="color" id="color" value="cyan" />
+                </div>
+              </div>
+
+              <div class="radioTheme-wrapper">
+                <label for="theme">Tema do evento</label>
+
+                <div class="box-radio grid">
+                  <div class="radio-inner">
+                    <input type="radio" name="theme" checked id="birth" />
+                    <img src="assets/images/01.png" alt="Bolo de Aniversário" />
+                    <label for="birth">Aniversário</label>
+                  </div>
+
+                  <div class="radio-inner">
+                    <input type="radio" name="theme" id="birth" />
+                    <img src="assets/images/02.png" alt="Bolo de Aniversário" />
+                    <label for="birth">Infantil</label>
+                  </div>
+
+                  <div class="radio-inner">
+                    <input type="radio" name="theme" id="birth" />
+                    <img src="assets/images/03.png" alt="Bolo de Aniversário" />
+                    <label for="birth">Formatura</label>
+                  </div>
+
+                  <div class="radio-inner">
+                    <input type="radio" name="theme" id="birth" />
+                    <img src="assets/images/04.png" alt="Bolo de Aniversário" />
+                    <label for="birth">Casamento</label>
+                  </div>
+
+                  <div class="radio-inner">
+                    <input type="radio" name="theme" id="birth" />
+                    <img src="assets/images/05.png" alt="Bolo de Aniversário" />
+                    <label for="birth">Chá de bebê</label>
+                  </div>
+
+                  <div class="radio-inner">
+                    <input type="radio" name="theme" id="birth" />
+                    <img src="assets/images/06.png" alt="Bolo de Aniversário" />
+                    <label for="birth">Chá de panela</label>
+                  </div>
+
+                  <div class="radio-inner">
+                    <input type="radio" name="theme" id="birth" />
+                    <img src="assets/images/07.png" alt="Bolo de Aniversário" />
+                    <label for="birth">Carnaval</label>
+                  </div>
+
+                  <div class="radio-inner">
+                    <input type="radio" name="theme" id="birth" />
+                    <img src="assets/images/08.png" alt="Bolo de Aniversário" />
+                    <label for="birth">Páscoa</label>
+                  </div>
+
+                  <div class="radio-inner">
+                    <input type="radio" name="theme" id="birth" />
+                    <img src="assets/images/09.png" alt="Bolo de Aniversário" />
+                    <label for="birth">São João</label>
+                  </div>
+
+                  <div class="radio-inner">
+                    <input type="radio" name="theme" id="birth" />
+                    <img src="assets/images/10.png" alt="Bolo de Aniversário" />
+                    <label for="birth">Halloween</label>
+                  </div>
+
+                  <div class="radio-inner">
+                    <input type="radio" name="theme" id="birth" />
+                    <img src="assets/images/11.png" alt="Bolo de Aniversário" />
+                    <label for="birth">Natal</label>
+                  </div>
+
+                  <div class="radio-inner">
+                    <input type="radio" name="theme" id="birth" />
+                    <img src="assets/images/12.png" alt="Bolo de Aniversário" />
+                    <label for="birth">Outro</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex gap1">
+                <div class="toggleStyle-wrapper flex1">
+                  <label for="theme">Estilo</label>
+
+                  <label class="input-inner flex">
+                    <input type="checkbox" id="theme" name="theme" />
+                    <div class="slider round"></div>
+                    <span class="theme"></span>
+                  </label>
+                </div>
+
+                <div class="input-wrapper flex1">
+                  <div class="droparea-wrapper">
+                    <label for="photo-file">Foto de capa</label>
+
+                    <div class="dropzone flex">
+                      <label for="photo-file" class="button flex">
+                        <svg
+                          width="32"
+                          height="32"
+                          viewBox="0 0 32 32"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M15.2929 3.29289C15.6834 2.90237 16.3166 2.90237 16.7071 3.29289L23.3738 9.95956C23.7643 10.3501 23.7643 10.9832 23.3738 11.3738C22.9832 11.7643 22.3501 11.7643 21.9596 11.3738L17 6.41421V20C17 20.5523 16.5523 21 16 21C15.4477 21 15 20.5523 15 20V6.41421L10.0404 11.3738C9.64992 11.7643 9.01675 11.7643 8.62623 11.3738C8.2357 10.9832 8.2357 10.3501 8.62623 9.95956L15.2929 3.29289ZM4 19C4.55228 19 5 19.4477 5 20V25.3333C5 25.7754 5.17559 26.1993 5.48816 26.5118C5.80072 26.8244 6.22464 27 6.66667 27H25.3333C25.7754 27 26.1993 26.8244 26.5118 26.5118C26.8244 26.1993 27 25.7754 27 25.3333V20C27 19.4477 27.4477 19 28 19C28.5523 19 29 19.4477 29 20V25.3333C29 26.3058 28.6137 27.2384 27.9261 27.9261C27.2384 28.6137 26.3058 29 25.3333 29H6.66667C5.69421 29 4.76157 28.6137 4.07394 27.9261C3.38631 27.2384 3 26.3058 3 25.3333V20C3 19.4477 3.44772 19 4 19Z"
+                            fill="#869198"
+                          />
+                        </svg>
+                        <p>Selecionar</p>
+                      </label>
+                      <input type="file" name="birth-file" id="photo-file" />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </fieldset>
 
-            <fieldset class="contact-info">
+            <fieldset class="contact-info flex">
               <legend>
                 <img src="assets/icons/contact.svg" alt="" />
                 <h3>Dados para contato</h3>

@@ -2,6 +2,10 @@
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .flex1 {
   flex: 1;
 }
