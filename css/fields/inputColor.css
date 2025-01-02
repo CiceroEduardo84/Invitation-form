@@ -9,16 +9,16 @@
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 100%;
-  border: solid 5px var(--shape-button);
+  border: solid 4px var(--shape-button);
   cursor: pointer;
 }
 
 #color:hover {
-  outline: solid 3px var(--shape-hover);
+  outline: solid 2px var(--shape-hover);
 }
 
 #color:checked {
-  outline: solid 3px var(--brand-light);
+  outline: solid 2px var(--brand-light);
 }
 
 input[value="brand-light"] {
