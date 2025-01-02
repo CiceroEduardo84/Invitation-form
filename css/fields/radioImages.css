@@ -2,7 +2,6 @@
   & .box-radio {
     grid-template-columns: repeat(4, minmax(8.375rem, 1fr));
     grid-template-rows: repeat(3, 1fr);
-    gap: 0.5rem;
 
     & .radio-inner {
       background-color: var(--shape-button);
